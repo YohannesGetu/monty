@@ -11,7 +11,7 @@ void m_pop(stack_t **stack, unsigned int line_number)
 {
 	stack_t *pop = *stack;
 
-	if (pop == NULL)
+	if (var.stack_len == 0)
 	{
 		dprintf(STDERR_FILENO,
 			"L%ud: can't pop an empty stack\n",
